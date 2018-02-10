@@ -1,0 +1,15 @@
+[
+{
+  "modid": "ctm",
+  "name": "Mr Sergey Minecraft tutorial",
+  "description": "Useless description",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MrCrayfish"],  
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
