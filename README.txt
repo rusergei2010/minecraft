@@ -18,7 +18,7 @@ Step 1: Open your command-line and browse to the folder where you extracted the 
 
 Step 2: Once you have a command window up in the folder that the downloaded material was placed, type:
 
-Windows: "gradlew setupDecompWorkspace"
+Windows: ""
 Linux/Mac OS: "./gradlew setupDecompWorkspace"
 
 Step 3: After all that finished, you're left with a choice.
@@ -57,3 +57,17 @@ https://www.youtube.com/watch?v=8VEdtQLuLO0&feature=youtu.be
 
 For more details update more often refer to the Forge Forums:
 http://www.minecraftforge.net/forum/index.php/topic,14048.0.html
+
+
+##################################################https://github.com/rusergei2010/minecraft
+Gam launch:
+1. git init
+2. git remote add origin https://github.com/rusergei2010/minecraft
+3. git clone https://github.com/rusergei2010/minecraft
+4. ./gradlew setupDecompWorkspace
+5. ./gradlew eclipse
+6. Open the gradle project in eclipse in Import Launch configuration files being generated at step 5 (they will be deleted by eclipse!)
+7. Run Client launch through Run -> Run Configurations -> Java Application -> minecraft_Client
+8. Enter in console: /give Player111 ctm:ItemCheese
+   - find the right Player name in the Eclipse console
+9. 
