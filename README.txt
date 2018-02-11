@@ -1,4 +1,5 @@
--------------------------------------------
+git commit-------------------------------------------
+git commit-------------------------------------------
 Source installation information for modders
 -------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
@@ -68,6 +69,6 @@ Gam launch:
 5. ./gradlew eclipse
 6. Open the gradle project in eclipse in Import Launch configuration files being generated at step 5 (they will be deleted by eclipse!)
 7. Run Client launch through Run -> Run Configurations -> Java Application -> minecraft_Client
-8. Enter in console: /give Player111 ctm:ItemCheese
+8. Enter in console (open console by pressing '/'): /give Player111 ctm:ItemCheese
    - find the right Player name in the Eclipse console
-9. 
+   - Press '/' and add into the 
