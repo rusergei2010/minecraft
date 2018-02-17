@@ -12,29 +12,29 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
-	
+
 	public static Item cheese;
 	public static Item cracker;
 	public static Item fire;
-	
+
 	public static void init() {
 		cheese = new ItemCheese();
 		cracker = new ItemCracker();
 		fire = new ItemFire();
 	}
-	
+
 	public static void register() {
 		GameRegistry.register(cheese);
 		GameRegistry.register(cracker);
 		GameRegistry.register(fire);
 	}
-	
+
 	public static void registerRenders() {
 		registerRender(cheese);
 		registerRender(cracker);
 		registerRender(fire);
 	}
-	
+
 	public static void registerRender(Item item) {
 		RenderItem render = Minecraft.getMinecraft().getRenderItem();
 		ItemModelMesher mesher = render.getItemModelMesher();

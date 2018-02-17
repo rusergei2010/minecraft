@@ -1,5 +1,6 @@
 package com.mrcrayfish.tutorial;
 
+import com.mrcrayfish.tutorial.init.ModBlocks;
 import com.mrcrayfish.tutorial.init.ModItems;
 import com.mrcrayfish.tutorial.proxy.CommonProxy;
 
@@ -24,7 +25,10 @@ public class Tutorial {
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println("preInit");
 		ModItems.init();
-		ModItems.register();		
+		ModItems.register();
+		
+		ModBlocks.init();
+		ModBlocks.register();
 	}
 
 	@EventHandler

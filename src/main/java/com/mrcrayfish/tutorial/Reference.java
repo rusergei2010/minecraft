@@ -18,7 +18,28 @@ public class Reference {
 		private String unlocalizedName;
 		private String registryName;
 		
-		private TutorialItems(String unlocalizedName, String registryName) {
+		TutorialItems(String unlocalizedName, String registryName) {
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+		
+		public String getRegistryName() {
+			return registryName;
+		}
+		
+		public String getUnlocalizedName() {
+			return unlocalizedName;
+		}
+	}
+	
+
+	public static enum TutorialBlocks {
+		CHEESE("cheese", "BlockCheese");				
+		
+		private String unlocalizedName;
+		private String registryName;
+		
+		TutorialBlocks(String unlocalizedName, String registryName) {
 			this.unlocalizedName = unlocalizedName;
 			this.registryName = registryName;
 		}
