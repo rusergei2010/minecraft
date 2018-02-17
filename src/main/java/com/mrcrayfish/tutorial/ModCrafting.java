@@ -4,6 +4,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModCrafting {
 	public static void register() {
-//		GameRegistry.addShapedRecipe(new ItemStack(Mod.cheese, ));
+//		GameRegistry.
 	}
 }

@@ -13,7 +13,8 @@ public class Reference {
 	public static enum TutorialItems {
 		CHEESE("cheese", "ItemCheese"),
 		CRACKER("cracker", "ItemCracker"),
-		FIRE("fire", "ItemFire");
+		FIRE("fire", "ItemFire"),
+		TNT("tnt", "ItemTNT");		
 		
 		private String unlocalizedName;
 		private String registryName;
@@ -34,7 +35,8 @@ public class Reference {
 	
 
 	public static enum TutorialBlocks {
-		CHEESE("cheese", "BlockCheese");				
+		CHEESE("cheese", "BlockCheese"),
+		TNT("tnt", "BlockTNT");
 		
 		private String unlocalizedName;
 		private String registryName;

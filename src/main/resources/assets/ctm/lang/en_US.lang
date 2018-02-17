@@ -1,4 +1,6 @@
 item.cheese.name=Cheese
 item.cracker.name=Cracker
+item.tnt.name=TNT
 
 tile.cheese.name=Cheese Block
+tile.tnt.name=TNT Block

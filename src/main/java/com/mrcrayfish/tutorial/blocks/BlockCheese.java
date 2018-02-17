@@ -12,5 +12,6 @@ public class BlockCheese extends Block {
 		setUnlocalizedName(Reference.TutorialBlocks.CHEESE.getUnlocalizedName());
 		setRegistryName(Reference.TutorialBlocks.CHEESE.getRegistryName());
 		setHardness(1.0f);
+		setLightOpacity(1);
 	}
 }
