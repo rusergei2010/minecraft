@@ -8,25 +8,4 @@ public class Reference {
 	
 	public static final String CLIENT_PROXY_CLASS = "com.mrcrayfish.tutorial.proxy.ClientProxy";
 	public static final String SERVER_PROXY_CLASS = "com.mrcrayfish.tutorial.proxy.ServerProxy";
-	
-	
-	public static enum TutorialItems {
-		CHEESE("cheese", "ItemCheese");
-		
-		private String unlocalizedName;
-		private String registryName;
-		
-		private TutorialItems(String unlocalizedName, String registryName) {
-			this.unlocalizedName = unlocalizedName;
-			this.registryName = registryName;
-		}
-		
-		public String getRegistryName() {
-			return registryName;
-		}
-		
-		public String getUnlocalizedName() {
-			return unlocalizedName;
-		}
-	}
 }
