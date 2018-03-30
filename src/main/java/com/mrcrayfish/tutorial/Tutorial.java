@@ -1,6 +1,5 @@
 package com.mrcrayfish.tutorial;
 
-import com.mrcrayfish.tutorial.init.ModItems;
 import com.mrcrayfish.tutorial.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
@@ -22,19 +21,14 @@ public class Tutorial {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		System.out.println("preInit");
-		ModItems.init();
-		ModItems.register();		
 	}
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		System.out.println("init");
 		proxy.init();
 	}	
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-		System.out.println("postInit");		
 	}	
 }
