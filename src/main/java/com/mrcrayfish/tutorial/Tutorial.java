@@ -1,7 +1,9 @@
 package com.mrcrayfish.tutorial;
 
+import com.mrcrayfish.tutorial.handlers.ExplodingTNT;
 import com.mrcrayfish.tutorial.proxy.CommonProxy;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -25,6 +27,7 @@ public class Tutorial {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		MinecraftForge.EVENT_BUS.register(new ExplodingTNT());
 		proxy.init();
 	}	
 	
