@@ -1,11 +1,7 @@
 package com.mrcrayfish.tutorial;
 
-import com.mrcrayfish.tutorial.handlers.BlockHandler;
-import com.mrcrayfish.tutorial.handlers.EmptyBlockRightClickHandler;
-import com.mrcrayfish.tutorial.handlers.MinecartHandler;
 import com.mrcrayfish.tutorial.proxy.CommonProxy;
 
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -29,9 +25,6 @@ public class Tutorial {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		MinecraftForge.EVENT_BUS.register(new MinecartHandler());
-		MinecraftForge.EVENT_BUS.register(new EmptyBlockRightClickHandler());
-		MinecraftForge.EVENT_BUS.register(new BlockHandler());
 		proxy.init();
 	}	
 	
