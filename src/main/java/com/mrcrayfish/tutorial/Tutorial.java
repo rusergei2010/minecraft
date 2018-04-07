@@ -2,6 +2,7 @@ package com.mrcrayfish.tutorial;
 
 import com.mrcrayfish.tutorial.init.ModBlocks;
 import com.mrcrayfish.tutorial.init.ModItems;
+import com.mrcrayfish.tutorial.init.Thunder;
 import com.mrcrayfish.tutorial.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +12,8 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+import static net.minecraftforge.common.MinecraftForge.EVENT_BUS;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSION)
 public class Tutorial {
@@ -34,6 +37,7 @@ public class Tutorial {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		System.out.println("init");
+		EVENT_BUS.register(new  Thunder());
 		proxy.init();
 	}	
 	
