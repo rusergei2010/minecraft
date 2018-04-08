@@ -79,4 +79,9 @@ processResources
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+
+    task copyTask(type: Copy) {
+        from 'build/resources/main/assets'
+        into 'build/classes/main/assets'
+    }
 }
