@@ -1,9 +1,8 @@
 package com.mrcrayfish.tutorial;
 
-import com.mrcrayfish.tutorial.handlers.BlockCurator;
-import com.mrcrayfish.tutorial.handlers.CreatureCurator;
 import com.mrcrayfish.tutorial.init.ModBlocks;
 import com.mrcrayfish.tutorial.init.ModItems;
+import com.mrcrayfish.tutorial.init.Thunder;
 import com.mrcrayfish.tutorial.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
@@ -38,9 +37,7 @@ public class Tutorial {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		System.out.println("init");
-
-//		EVENT_BUS.register(new CreatureCurator());
-//		EVENT_BUS.register(new BlockCurator());
+		EVENT_BUS.register(new  Thunder());
 		proxy.init();
 	}	
 	

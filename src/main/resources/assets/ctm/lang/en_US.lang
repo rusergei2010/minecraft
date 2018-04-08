@@ -1,0 +1,7 @@
+item.cheese.name=Cheese
+item.cracker.name=Cracker
+item.tnt.name=TNT
+
+tile.cheese.name=Cheese Block
+tile.cracker.name=Cracker Block
+tile.tnt.name=TNT Block
