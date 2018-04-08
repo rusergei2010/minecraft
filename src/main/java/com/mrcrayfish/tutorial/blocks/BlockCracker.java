@@ -10,5 +10,7 @@ public class BlockCracker extends Block {
         super(Material.CAKE);
         setUnlocalizedName("cracker");
         setRegistryName("BlockCracker");
+        setHardness(1.0f);
+        setLightOpacity(1);
     }
 }
